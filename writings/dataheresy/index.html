@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>GregElin.net</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Greg Elin">
+	<!-- Date: 2008-12-25 -->
+	
+	<script src="/shared/javascript/prototype/prototype-1.6.0.3.js" type="text/javascript"></script>
+	<link rel='stylesheet' href='/shared/stylesheets/study-basic.css' type='text/css' />
+	
+	<style>
+	
+	TEXTAREA.editTriple {
+		height:100px;
+		position:relative;
+		z-index:1000;
+		border:1px solid gray;
+	}
+
+	TEXTAREA.singleline {
+		height:1.3em;
+		overflow: auto;
+		vertical-align:top;
+		width: 232px;
+	}
+
+	TEXTAREA.multiline {
+		height:5em;
+		width: 128px;
+	}
+
+	DIV.tripleFieldWrapper,
+	DIV.tripleText {
+		float:left;
+	/*	height:12px; */
+		height:100%;
+	}
+
+	DIV.tripleText {
+		width:107px;
+	}
+
+	DIV.tripleFieldWrapper {
+	/*	border:1px black solid; */
+		width:130px;
+	}
+	
+	#myCpWindow {
+		width:800px;
+		height: 40em;
+		overflow:auto;
+		padding:0;
+		position:relative;
+		margin: 48px 0px 24px 0px;
+	}
+	
+	textarea.code {
+		width:600px;
+		height:8em;
+		background-color: #eee;
+	}
+
+	</style>
+	
+		
+</head>
+<body>
+	
+	<body>
+	<div id="pg_top">
+		<div id="pg_top_title"><a href="http://gregelin.com">Greg Elin</a></div>
+		<div id="pg_top_instructions">Musing on Data Heresies</div>
+	</div>
+
+	<div id="pg_mdl">
+
+		
+		
+		
+Greg Elin<br />
+Started: June 2009<br />
+Version: 05.20.2010 - still in progress<br /><br />
+
+<div class="title-text">Introduction</div>
+		<div class="body-text">
+		<p>
+		Relational database technology is a 30-year old technology. It's very good. It's so good, we have
+		tended it use it as a one-size-fits-all-solution. And that is a problem. As more information goes 
+		digital, we try to shoe horn into relational databases all sorts of structured information that does
+		not necessarily conform to the nice neat transactions and fixed, long-term data structures of relational 
+		databases. Also, RDMS were not designed to deal with Internet-scale data. 
+		</p>
+		<p>
+		What follows are what many might consider pretty heretical thoughts for working with data.
+		But like other heresies, many individuals will agree with these if you ask privately one-on-one. 
+		</p>
+	</div>
+
+<div class="title-text">Data Heresies</div>
+		<div class="body-text">
+		
+		<ul>
+		<li>The experience of sharing data within an enterprise or between enterprises is painful. Vendors will make this better, but they are likely to be startups and web 2.0 companies that have been forced to entirely new solutions for dealing with data, like BigTable, Hadoop, MapReduce, and Memcached. In the future, there will be players as enterprise data moves to the cloud and the cloud, virtualizations, and clusters moves into the enterprise. Traditional database vendors role is likely to diminish unless they expand their thinking.</li>
+		
+		<li>ETL (Extraction Transformation Loading) and Data Quality tools are crappy, cumbersome, and lack standardization, especially when compared to content production and dissemination. Where there are good ETL tools, they are incredibly expensive. Also, most if not all ETL tools are ignorant of how to leverage the web for data quality.</li>
+		
+		<li>Future of data sharing is in versioning systems and "data containers". I'm starting to treat data more like code and exploring how to use tools like github to manage data I want to share. (Data loaded into a database should be treated as a "build" instead of a system of record; the non-proprietary data dump should be system of record.) To see what is happening in versioning systems, see <a href="http://github.com">GitHub</a></a> or <a href="waves.google.com">playback feature of Google Waves (about 18-20min in video)</a>. To see "data containers" look at <a href="http://socrata.com">Socrata.com</a> or <a href="http://ogdisdk.cloudapp.net/">Microsoft's Open Govt Data Initiative</a>. These are small data sets, but the ideas are especially applicable to big data in the clouds, namely, getting data as some type of container or image with not just data but business rules, metadata, provenance, etc.</li>
+		
+		<li>We need tools for "semantic scaling" data, especially large data streams  produced by sensors, science, or life/business streams.</li>
+		
+		</ul>
+</div>
+
+<div class="title-text">Some Experts I'd Like to Learn More From</div>
+		<div class="body-text">
+		<ul>
+		<li>Roger Margoulis, Research at O'Reilly Media</li>
+		<li>University of Pennsylvania Data Provenance Research</li>
+		<li>Jeff Jonas, Senior Scientist, IBM</li>
+		</ul>
+
+
+</div>
+</body>
+</html>
